@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: $site-white;
+}
+
+header, footer {
+  text-align: center;
+  background: $site-darkbrown;
+  color: $site-white;
+  padding: 1rem;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: $site-white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  margin-right: 10px;
+  color: $site-blue;
+  text-decoration: none;
+}
+
+.language {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.language-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
