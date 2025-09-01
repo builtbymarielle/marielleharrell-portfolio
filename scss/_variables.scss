@@ -1,18 +1,24 @@
 // Site Colors
 $site-white: #FFFAEE;
+$site-white-hover: #f3eee2;
 $site-blue: #86BFEE;
 $site-blue-darker: #75ADDA;
 $site-orange: #F56634;
 $site-marron: #602017;
+$site-marron-hover: #4d1912;
 $site-darkbrown: #2B0E0D;
 $site-grey: #E6E1DF;
+$site-textcolor: #797979;
 
 // Container Widths at breakpoints
+$container-xs: 330px;
 $container-sm: 540px;
 $container-md: 720px;
 $container-lg: 960px;
 $container-xl: 1140px;
 $container-xxl: 1320px;
+
+$container-narrow: 753px;
 
 // gutters / padding
 $container-padding: 20px;

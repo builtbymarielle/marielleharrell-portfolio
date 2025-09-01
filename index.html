@@ -11,14 +11,64 @@
   >
 </head>
 <body>
-  <header>
-    <h1>My Projects</h1>
-  </header>
 
   <!-- <main id="projects-container"> -->
     <!-- Cards will be inserted here -->
   <!-- </main> -->
 
+  <section id="hero">
+    <div class="hero__container container">
+      <div class="hero__text">
+        <h1>Hello, I'm Marielle</h1>
+        <h2>SOFTWARE ENGINEER</h2>
+          <div class="hero__socials">
+            <a href="tel:+13174468807" class="hero__socials-holder">
+              <div class="icon-circle">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <span>+1 317-446-8807</span>
+            </a>
+            <a href="mailto:builtbymarielle@gmail.com" class="hero__socials-holder">
+              <div class="icon-circle">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <span>builtbymarielle@gmail.com</span>
+            </a>
+            <a href="https://www.google.com/maps/place/Indianapolis,+IN" target="_blank" class="hero__socials-holder">
+              <div class="icon-circle">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <span>Indianapolis, IN</span>
+            </a>
+          </div>
+      </div>
+      <div class="image__moveable"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about__container container">
+      <div class="about__content">
+        <h2>About Me</h2>
+        <p>Hello! My name is Marielle Harrell, and I'm passionate about crafting innovative solutions for the web. My journey into coding began in 2018 during my junior year of high school when I was introduced to C++. This initial spark ignited my interest in coding, leading me to pursue it as a career.</p>
+        <p>At Indiana University Indianapolis, I pursued majors in Informatics and Media Arts & Science with a specialization in Web Development. Throughout my college years, I had the opportunity to collaborate with peers on various projects, develop my own web applications, and serve as a peer mentor, assisting other students in my major. My education equipped me with proficiency in coding languages such as HTML, CSS, JavaScript, and Python. Today, my focus lies in tackling larger projects and continuously enhancing my skills in web development.</p>
+        <p>Complementing my academic journey, I've acquired invaluable experience through both internships and professional roles. From my impactful internship at Infosys to my current position as a Software Engineer at CALRegional, I've continuously enriched my skill set and expertise.</p>
+
+        <div class="about__btn-holder">
+          <a href="#" class="about__button btn__outline">View Resume</a>
+          <a href="#projects" class="about__button btn__solid">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showmore">
+    <div class="showmore__container container">
+      <h2>Want to See More?</h2>
+      <p>Feel free to look at my old projects and repos. Happy digging :)</p>
+      <a href="#" class="showmore__button">view my project history</a>
+    </div>
+  </section>
   <footer>
     <div class="main-footer">
       <div class="main-footer__container container">
@@ -29,31 +79,31 @@
         <hr>
 
         <div class="main-footer__socials">
-          <div class="social-info-holder">
-            <a href="tel:+13174468807" class="icon-circle">
+          <a  href="tel:+13174468807" class="social-info-holder">
+            <div class="icon-circle">
               <i class="fa-solid fa-phone"></i>
-            </a>
+            </div>
             <span>+1 317-446-8807</span>
-          </div>
-          <div class="social-info-holder">
-            <a  href="mailto:builtbymarielle@gmail.com" class="icon-circle">
+          </a>
+          <a href="mailto:builtbymarielle@gmail.com" class="social-info-holder">
+            <div class="icon-circle">
               <i class="fa-solid fa-envelope"></i>
-            </a>
+            </div>
             <span>builtbymarielle@gmail.com</span>
-          </div>
-          <div class="social-info-holder">
-            <a href="https://www.google.com/maps/place/Indianapolis,+IN" target="_blank" class="icon-circle">
+          </a>
+          <a href="https://www.google.com/maps/place/Indianapolis,+IN" target="_blank" class="social-info-holder">
+            <div class="icon-circle">
               <i class="fa-solid fa-location-dot"></i>
-            </a>
+            </div>
             <span>Indianapolis, IN</span>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
     <div class="true-footer">
       <div class="true-footer__container container">
-          <p>BuiltByMarielle2025</p>
+          <p> &copy; BuiltByMarielle2025</p>
 
           <div class="connect-icons">
             <a class="connect-icon" href="https://github.com/builtbymarielle" target="_blank">
@@ -67,6 +117,7 @@
     </div>
   </footer>
   
-  <script src="app/projectCardGenerator.js"></script>
+  <script src="js/projectCardGenerator.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -5,10 +5,13 @@
   box-sizing: border-box;
 
   // Responsive Max-Widths
-  @media (min-width: 576px) {
+  @media (max-width: 500px) {
+    max-width: $container-xs;
+  }
+  @media (min-width: 500px) {
     max-width: $container-sm;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     max-width: $container-md;
   }
   @media (min-width: 992px) {

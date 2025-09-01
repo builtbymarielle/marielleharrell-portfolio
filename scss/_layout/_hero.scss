@@ -1,0 +1,178 @@
+#hero{
+    min-height: 500px;
+    width: 100%;
+    background-image: url('/images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .hero__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        position: relative;
+
+        .hero__text{
+            min-height: 400px;
+            color: $site-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+
+             h1 {
+                font-family: SoraBold;
+                font-size: 72px;
+            }
+
+            h2 {
+                font-family: SoraLight;
+                font-size: 36px;
+                font-weight: 200;
+                letter-spacing: 10px;
+            }
+
+            .hero__socials{
+                height: 115px;
+                display: flex;
+                align-items: left;
+                justify-content: space-between;
+                flex-direction: column;
+                a.hero__socials-holder{
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    padding: 10px 0;
+                    text-decoration: none;
+                    max-width: 240px;
+                    
+                    .icon-circle{
+                        background-color: $site-white;
+                        color: $site-darkbrown;
+                        font-size: 14px;
+                        border-radius: 30px;
+                        width: 35px;
+                        height: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.3s ease;
+                    }
+
+                    span {
+                        color: $site-white;
+                        padding-left: 10px;
+                        font-family: InterLight;
+                        font-size: 16px;
+                        transition: 0.3s ease;
+                    }
+                }
+                a.hero__socials-holder:hover{
+                     .icon-circle{
+                        background-color: $site-grey;
+                    }
+                    span{
+                        color: $site-grey;
+                    }
+                }
+            }
+        }
+
+        .image__moveable{
+            height: 400px;
+            width: 400px;
+            background-image: url('/images/profile-me.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 10px solid $site-white;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -150px;
+            right: 0;
+             transform: translateY(var(--scroll-y));
+            transition: transform 0.1s linear;
+        }
+    }
+}
+
+
+// ----------------------
+// Media Queries
+// ----------------------
+
+@media (max-width: 992px){
+    #hero{
+        min-height: 501px;
+        .hero__container{
+            .hero__text{
+                h1 {
+                    font-size: 48px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+            }
+            .image__moveable{
+                height: 370px;
+                width: 370px;
+                bottom: -200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) { // Tablet 
+}
+
+@media (max-width: 480px) { // Mobile 
+    #hero{
+        min-height: 288px;
+        background-position: -170px center;
+        .hero__container{
+            .hero__text{
+                min-height: 300px;
+                h1 {
+                    font-size: 32px;
+                    margin-bottom: 8px;
+                }
+
+                h2 {
+                    font-size: 16px;
+                    letter-spacing: 5px;
+                }
+                .hero__socials{
+                    height: 55px;
+                    a.hero__socials-holder{
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        padding: 5px 0;
+                        text-decoration: none;
+                        max-width: 202px;
+                        
+                        .icon-circle{
+                            font-size: 12px;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .image__moveable{
+                height: 160px;
+                width: 160px;
+                bottom: -50px;
+                border: 5px solid $site-white;
+            }
+        }
+    }
+}
