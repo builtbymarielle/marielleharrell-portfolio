@@ -5,7 +5,7 @@
   box-sizing: border-box;
 
   // Responsive Max-Widths
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     max-width: $container-xs;
   }
   @media (min-width: 500px) {
