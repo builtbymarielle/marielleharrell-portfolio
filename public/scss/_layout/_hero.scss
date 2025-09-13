@@ -1,5 +1,7 @@
 #hero{
-    min-height: 500px;
+    // height: 90vh;
+    // max-height: 800px;
+    min-height: 550px;
     width: 100%;
     background-image: url('/images/hero.png');
     background-size: cover;
@@ -22,6 +24,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            // padding: 0 20px;
             
 
              h1 {
@@ -95,6 +98,11 @@
             right: 0;
              transform: translateY(var(--scroll-y));
             transition: transform 0.1s linear;
+            --scroll-y: 0px;
+            --float-intensity: 25px,
+            animation: cleanFloatAnimation 4s ease-in-out infinite;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+
         }
     }
 }
@@ -106,9 +114,12 @@
 
 @media (max-width: 992px){
     #hero{
+        height: unset;
+        max-height: unset;
         min-height: 501px;
         .hero__container{
             .hero__text{
+                padding: 0 20px;
                 h1 {
                     font-size: 48px;
                 }
@@ -120,7 +131,7 @@
             .image__moveable{
                 height: 370px;
                 width: 370px;
-                bottom: -200px;
+                bottom: -150px;
             }
         }
     }
@@ -129,12 +140,13 @@
 @media (max-width: 768px) { // Tablet 
 }
 
-@media (max-width: 480px) { // Mobile 
+@media (max-width: 600px) { // Mobile 
     #hero{
         min-height: 288px;
         background-position: -170px center;
         .hero__container{
             .hero__text{
+                // padding: 0;
                 min-height: 300px;
                 h1 {
                     font-size: 32px;
@@ -168,10 +180,27 @@
                 }
             }
             .image__moveable{
-                height: 160px;
-                width: 160px;
+                height: 200px;
+                width: 200px;
                 bottom: -50px;
                 border: 5px solid $site-white;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #hero{
+        .hero__container{
+            .hero__text{
+                padding: 0;
+            }
+            .image__moveable{
+                margin-right: 0;
+                width: 160px;
+                height: 160px;
+                        margin-bottom: -30px;
             }
         }
     }

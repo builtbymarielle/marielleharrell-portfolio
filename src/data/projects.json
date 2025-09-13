@@ -1,0 +1,18 @@
+[
+  {
+    "title": "SkyAlert - Weather App",
+    "created": "Aug 2023",
+    "languages": ["HTML", "CSS", "JavaScript", "SASS", "jquery"],
+    "description": "Weather forecast app using OpenWeatherMap API.",
+    "github": "https://github.com/yourusername/weather-app",
+    "live": "https://harremar.github.io/weatherapi/"
+  },
+  {
+    "title": "Todo Tracker",
+    "created": "March 2025",
+    "languages": ["JavaScript", "CSS"],
+    "description": "Todo list app with persistent storage and theme support.",
+    "github": "https://github.com/yourusername/todo-tracker",
+    "live": "https://yourusername.github.io/todo-tracker/"
+  }
+]
