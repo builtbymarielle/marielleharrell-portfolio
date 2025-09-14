@@ -80,19 +80,32 @@ footer {
             width: 35px;
             height: 35px;
           }
-          span {
+          span.underline {
             font-family: InterLight;
             font-size: 16px;
+            position: relative;
+            display: inline-block;
             color: $site-white;
+            transition: color 0.3s ease;
+
+            &::after {
+              content: "";
+              border-bottom: solid 2px white;
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              width: 100%;
+              transform: scaleX(0);
+              transform-origin: right;
+              transition: transform 0.25s;
+            }
           }
         }
 
         a.social-info-holder:hover {
-          .icon-circle {
-            background-color: $site-grey;
-          }
-          span {
-            color: $site-grey;
+          span.underline::after {
+            transform-origin: left;
+            transform: scaleX(1);
           }
         }
       }

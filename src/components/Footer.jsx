@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="icon-circle">
                   <i className="fa-solid fa-phone"></i>
                 </div>
-                <span>+1 317-446-8807</span>
+                <span className="underline">+1 317-446-8807</span>
               </a>
             </AnimatedComponent>
             <AnimatedComponent delay={200}>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className="icon-circle">
                   <i className="fa-solid fa-envelope"></i>
                 </div>
-                <span>builtbymarielle@gmail.com</span>
+                <span className="underline">builtbymarielle@gmail.com</span>
               </a>
             </AnimatedComponent>
             <AnimatedComponent delay={200}>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="icon-circle">
                   <i className="fa-solid fa-location-dot"></i>
                 </div>
-                <span>Indianapolis, IN</span>
+                <span className="underline">Indianapolis, IN</span>
               </a>
             </AnimatedComponent>
           </div>
