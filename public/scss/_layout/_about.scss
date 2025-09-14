@@ -96,7 +96,8 @@
 @media (max-width: 480px) {
   //Mobile
   #about {
-    min-height: 950px;
+    min-height: 800px;
+    padding: 0;
     .about__container {
       .about__content {
         h2 {

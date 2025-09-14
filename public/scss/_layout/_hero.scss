@@ -4,6 +4,7 @@
   min-height: 550px;
   width: 100%;
   background-image: url("/images/hero.png");
+  // background: linear-gradient(135deg, #602017 0%, #2b0e0d 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -73,11 +74,27 @@
           }
         }
         a.hero__socials-holder:hover {
-          .icon-circle {
-            background-color: $site-grey;
-          }
-          span {
-            color: $site-grey;
+          span.underline {
+            position: relative;
+            display: inline-block;
+            &::after {
+              content: "";
+              border-bottom: solid 2px white;
+              position: absolute;
+              bottom: -5px;
+              left: 10px;
+              width: calc(100% - 10px);
+              transform: scaleX(0);
+              transform-origin: right;
+              transition: transform 0.25s;
+            }
+
+            &:hover {
+              &::after {
+                transform-origin: left;
+                transform: scaleX(1);
+              }
+            }
           }
         }
       }
