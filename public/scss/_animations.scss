@@ -21,17 +21,26 @@
   }
 }
 
-@keyframes flash {
+@keyframes subtleZoom {
   0% {
-    background-color: #f56634;
-    box-shadow: 0 4px 12px rgba(245, 102, 52, 0.4);
-  }
-  50% {
-    background-color: #f56634cc;
-    box-shadow: 0 6px 18px rgba(245, 102, 52, 0.6);
+    background-size: 110%;
   }
   100% {
-    background-color: #f56634;
-    box-shadow: 0 4px 12px rgba(245, 102, 52, 0.4);
+    background-size: 100%;
+  }
+}
+
+@keyframes kenburns {
+  0% {
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+  }
+  50% {
+    background-size: 120% 120%;
+    background-position: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+    background-position: 50% 50%;
   }
 }
