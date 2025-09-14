@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
 import projectsData from "../data/projects.json";
 
 import AnimatedComponent from "./AnimatedComponent";
-const Projects = () => {
+const Projects = ({ limit, isArchivePage = false }) => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     try {
-      setProjects(projectsData);
+      let recentProjects = [...projectsData].sort(
+        (a, b) => new Date(b.created) - new Date(a.created)
+      );
+      if (limit) {
+        recentProjects = recentProjects.slice(0, limit);
+      }
+      setProjects(recentProjects);
       setLoading(false);
     } catch (err) {
       setError("Error loading projects");
@@ -23,7 +30,8 @@ const Projects = () => {
   if (error) return <div>Error: {error}</div>;
 
   // Create repeating "MY PROJECTS" text
-  const repeatingText = Array(20).fill("MY PROJECTS").join(". ");
+  const marqueeText = isArchivePage ? "PROJECT ARCHIVES" : "MY PROJECTS";
+  const repeatingText = Array(20).fill(marqueeText).join(". ");
 
   return (
     <section id="projects">
@@ -43,6 +51,18 @@ const Projects = () => {
               </AnimatedComponent>
             ))}
           </main>
+
+          <div className="button-container">
+            {isArchivePage ? (
+              <Link to="/" className="view-archives-button">
+                Back to Home
+              </Link>
+            ) : (
+              <Link to="/projects" className="view-archives-button">
+                View Project Archives
+              </Link>
+            )}
+          </div>
         </div>
       </section>
     </section>

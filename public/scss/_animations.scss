@@ -1,17 +1,3 @@
-@keyframes cleanFloatAnimation {
-  0% {
-    transform: translateY(calc(#{var(--scroll-y, 0px)} + 0px));
-  }
-  50% {
-    transform: translateY(
-      calc(#{var(--scroll-y, 0px)} - #{var(--float-intensity, 25px)})
-    );
-  }
-  100% {
-    transform: translateY(calc(#{var(--scroll-y, 0px)} + 0px));
-  }
-}
-
 @keyframes scrollSkills {
   0% {
     transform: translateX(0);

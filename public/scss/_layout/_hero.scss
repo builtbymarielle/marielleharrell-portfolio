@@ -103,7 +103,6 @@
     .image__moveable {
       height: 400px;
       width: 400px;
-      background-image: url("/images/profile-me.png");
       background-size: cover;
       background-repeat: no-repeat;
       border: 10px solid $site-white;
@@ -111,14 +110,29 @@
       position: absolute;
       bottom: -50px;
       right: 0;
-      transform: translateY(var(--scroll-y));
       transition: transform 0.1s linear;
-      --scroll-y: 0px;
-      --float-intensity: 25px;
-      animation: cleanFloatAnimation 4s ease-in-out infinite;
-      animation: cleanFloatAnimation 4s ease-in-out infinite;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+
+      /* The float animation is now on a pseudo-element to avoid conflicting with the parallax transform */
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 100%;
+        animation: cleanFloatAnimation 4s ease-in-out infinite;
+        --float-intensity: 25px;
+      }
     }
+  }
+}
+
+@keyframes cleanFloatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(calc(-1 * var(--float-intensity, 25px)));
   }
 }
 

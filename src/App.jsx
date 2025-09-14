@@ -1,24 +1,17 @@
 import React from "react";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import ShowMore from "./components/ShowMore";
-import Footer from "./components/Footer";
-import { useScrollAnimations } from "./hooks/useScrollAnimations";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import ProjectArchives from "./components/ProjectArchives";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  // Initialize scroll animations
-  useScrollAnimations();
-
   return (
     <div className="App">
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      {/* <ShowMore /> */}
-      <Footer />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectArchives />} />
+      </Routes>
     </div>
   );
 }
