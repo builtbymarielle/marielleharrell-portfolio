@@ -13,7 +13,7 @@ $site-grey: #e6e1df;
 $site-textcolor: #797979;
 
 // Container Widths at breakpoints
-$container-xs: 330px;
+$container-xs: calc(100% - 20px);
 $container-sm: 540px;
 $container-md: 720px;
 $container-lg: 960px;

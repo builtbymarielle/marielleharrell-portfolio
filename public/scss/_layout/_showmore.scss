@@ -1,4 +1,6 @@
 #showmore {
+  position: relative;
+  z-index: 4;
   min-height: 403px;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),

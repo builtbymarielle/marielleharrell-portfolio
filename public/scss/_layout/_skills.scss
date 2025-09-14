@@ -22,7 +22,7 @@
     .marquee {
       display: flex;
       width: fit-content;
-      animation: scrollSkills 20s linear infinite;
+      animation: scrollSkills 80s linear infinite;
       gap: 32px;
     }
   }
@@ -169,7 +169,8 @@
     }
 
     .skills__container {
-      padding: 100px 0 50px 0;
+      padding: 50px 0 50px 0;
+      margin-top: -2px;
     }
   }
 }

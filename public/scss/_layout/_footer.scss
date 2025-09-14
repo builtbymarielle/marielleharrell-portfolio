@@ -4,6 +4,8 @@ footer {
   background-color: $site-blue;
   background: linear-gradient(135deg, #86bfee 0%, #3877aa 100%);
   padding: 0;
+  position: relative;
+  z-index: 4;
 
   .main-footer {
     display: flex;
