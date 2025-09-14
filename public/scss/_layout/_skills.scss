@@ -21,8 +21,9 @@
     }
     .marquee {
       display: flex;
-      gap: 32px;
+      width: fit-content;
       animation: scrollSkills 20s linear infinite;
+      gap: 32px;
     }
   }
 

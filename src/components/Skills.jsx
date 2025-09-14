@@ -44,6 +44,7 @@ const Skills = () => {
       <section className="slope-skew">
         <div className="inner marquee">
           <h1>{repeatingText}</h1>
+          <h1>{repeatingText}</h1>
         </div>
       </section>
 

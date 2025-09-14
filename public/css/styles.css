@@ -32,8 +32,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(calc(-50% - 16px));
+            transform: translateX(calc(-50% - 16px));
   }
 }
 @keyframes scrollSkills {
@@ -42,8 +42,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(calc(-50% - 16px));
+            transform: translateX(calc(-50% - 16px));
   }
 }
 @-webkit-keyframes subtleZoom {
@@ -591,9 +591,12 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-animation: scrollSkills 20s linear infinite;
           animation: scrollSkills 20s linear infinite;
+  gap: 32px;
 }
 #skills .skills__container {
   background: linear-gradient(135deg, #602017 0%, #2b0e0d 100%);
