@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import projectsData from "../data/projects.json";
 
+import AnimatedComponent from "./AnimatedComponent";
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -37,7 +38,9 @@ const Projects = () => {
         <div className="projects__content-wrapper">
           <main className="projects-grid container">
             {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+              <AnimatedComponent key={index} delay={index * 100}>
+                <ProjectCard project={project} />
+              </AnimatedComponent>
             ))}
           </main>
         </div>

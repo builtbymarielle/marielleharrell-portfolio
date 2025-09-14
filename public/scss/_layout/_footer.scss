@@ -50,6 +50,7 @@ footer {
         padding: 20px 0;
 
         a.social-info-holder {
+          min-width: 200px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -170,12 +171,15 @@ footer {
 
         .main-footer__socials {
           display: flex;
+          flex-direction: column;
+          align-items: center;
           justify-content: space-between;
           width: 100%;
           max-width: 816px;
           padding: 20px 0;
 
           .social-info-holder {
+            padding: 20px 0;
             span {
               font-size: 14px;
             }

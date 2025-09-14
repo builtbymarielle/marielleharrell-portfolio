@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import skillsdata from "../data/skills.json";
+import AnimatedComponent from "./AnimatedComponent";
 
 const Skills = () => {
   const [visibleCount, setVisibleCount] = useState(10); // show first 10 initially
@@ -52,16 +53,18 @@ const Skills = () => {
         <div className="skills__content-wrapper">
           <div className="skills__grid container">
             {skillsdata.slice(0, visibleCount).map((skill, i) => (
-              <div key={skill.name} className={getSkillItemClass(i)}>
-                <div className="skills__icon-wrapper">
-                  <img
-                    src={`/images/icons/${skill.icon}`}
-                    alt={skill.name}
-                    className="skills__icon"
-                  />
+              <AnimatedComponent key={skill.name} delay={i * 50}>
+                <div className={getSkillItemClass(i)}>
+                  <div className="skills__icon-wrapper">
+                    <img
+                      src={`/images/icons/${skill.icon}`}
+                      alt={skill.name}
+                      className="skills__icon"
+                    />
+                  </div>
+                  <span className="skills__name">{skill.name}</span>
                 </div>
-                <span className="skills__name">{skill.name}</span>
-              </div>
+              </AnimatedComponent>
             ))}
           </div>
 

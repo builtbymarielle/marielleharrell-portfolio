@@ -90,6 +90,22 @@
     background-position: 50% 50%;
   }
 }
+.animated-component {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+}
+
+.animated-component.is-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -156,6 +172,10 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
+  border-left: 5px solid transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .project-card .badge-orange {
   background-color: #f56634;
@@ -227,6 +247,10 @@ h1, h2, h3, h4, h5, h6, p {
   width: 35px;
   height: 35px;
   margin-right: 5px;
+}
+
+.project-card:hover {
+  border-left: 5px solid #f56634;
 }
 
 @media (max-width: 480px) {
@@ -727,36 +751,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 20px;
   text-align: center;
   border-radius: 8px;
-  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease, -webkit-transform 0.5s ease;
-  transition: opacity 0.5s ease, -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease, -webkit-transform 0.5s ease;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.5s ease, transform 0.5s ease;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease, -webkit-transform 0.5s ease;
-  -webkit-animation: fadeIn 0.5s ease-out forwards;
-          animation: fadeIn 0.5s ease-out forwards;
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  -webkit-transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
+  transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
 }
 #skills .skills__container .skills__grid .skills__item .skills__icon-wrapper {
   width: 100px;
@@ -1135,6 +1133,7 @@ footer .main-footer .main-footer__container .main-footer__socials {
   padding: 20px 0;
 }
 footer .main-footer .main-footer__container .main-footer__socials a.social-info-holder {
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1263,11 +1262,21 @@ footer .true-footer .true-footer__container .connect-icons .connect-icon .fa-bra
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
     max-width: 816px;
+    padding: 20px 0;
+  }
+  footer .main-footer .main-footer__container .main-footer__socials .social-info-holder {
     padding: 20px 0;
   }
   footer .main-footer .main-footer__container .main-footer__socials .social-info-holder span {
