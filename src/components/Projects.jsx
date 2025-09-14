@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import ProjectCard from './ProjectCard';
-import projectsData from '../data/projects.json';
+import React, { useState, useEffect } from "react";
+import ProjectCard from "./ProjectCard";
+import projectsData from "../data/projects.json";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -12,9 +12,9 @@ const Projects = () => {
       setProjects(projectsData);
       setLoading(false);
     } catch (err) {
-      setError('Error loading projects');
+      setError("Error loading projects");
       setLoading(false);
-      console.error('Error loading projects:', err);
+      console.error("Error loading projects:", err);
     }
   }, []);
 
