@@ -1437,3 +1437,242 @@ footer .true-footer .true-footer__container .connect-icons .connect-icon .fa-bra
     gap: 15px;
   }
 }
+.hamburger-menu {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1001;
+  background: #ffffff;
+  border: 2px solid #2b0e0d;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #2b0e0d;
+  margin: 2px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+.hamburger-menu:hover {
+  background: #2b0e0d;
+}
+.hamburger-menu:hover span {
+  background-color: #ffffff;
+}
+.hamburger-menu.open {
+  background: #2b0e0d;
+}
+.hamburger-menu.open span {
+  background-color: #ffffff;
+}
+.hamburger-menu.open span:nth-child(1) {
+  -webkit-transform: translateY(7px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
+}
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.open span:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+}
+.hamburger-menu.open:hover {
+  background: #ffffff;
+}
+.hamburger-menu.open:hover span {
+  background-color: #2b0e0d;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background: rgba(43, 14, 13, 0.95);
+  z-index: 1000;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sidebar.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.sidebar ul {
+  list-style: none;
+  padding: 80px 20px 0px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+}
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: SoraRegular;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.sidebar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.sidebar ul li a:hover {
+  color: #e6e1df;
+}
+.sidebar ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.sidebar ul li.has-submenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sidebar ul li.has-submenu a .bi-chevron-down {
+  font-size: 16px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.sidebar ul li.has-submenu a .bi-chevron-down.open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.sidebar ul li.has-submenu .submenu {
+  display: none;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  list-style: none;
+}
+.sidebar ul li.has-submenu .submenu.open {
+  max-height: 200px;
+  padding-top: 10px;
+  display: block;
+}
+.sidebar ul li.has-submenu .submenu li a {
+  font-size: 18px;
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sidebar ul li.has-submenu .submenu li a:hover {
+  color: #ffffff;
+}
+.sidebar .section-with-curve {
+  margin-bottom: -2px;
+}
+.sidebar .sidebar__socials {
+  background-color: #ffffff;
+  padding: 40px 20px 20px;
+  margin-top: auto;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.sidebar .sidebar__socials .social-icon {
+  color: #2b0e0d;
+  font-size: 28px;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-decoration: none;
+}
+.sidebar .sidebar__socials .social-icon:hover {
+  color: #602017;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

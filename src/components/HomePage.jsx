@@ -41,7 +41,11 @@ const HomePage = () => {
           CALRegional, I've continuously enriched my skill set and expertise.
         </p>
         <div className="about__btn-holder">
-          <a href="#" className="about__button btn__outline">
+          <a
+            href="https://drive.google.com/file/d/1jxJ3IrAUvs9SI2QBY8C59HAPfL5WIBKR/view?usp=sharing"
+            target="_blank"
+            className="about__button btn__outline"
+          >
             View Resume
           </a>
           <a href="#projects" className="about__button btn__solid">
