@@ -2,12 +2,15 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import ProjectArchives from "./components/ProjectArchives";
-import ScrollToTop from "./components/ScrollToTop";
+import Navigation from "./components/Navigation";
+import { useHashScroll } from "./hooks/useHashScroll";
 
 function App() {
+  useHashScroll();
+
   return (
     <div className="App">
-      <ScrollToTop />
+      <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectArchives />} />

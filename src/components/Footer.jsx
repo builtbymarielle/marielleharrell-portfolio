@@ -3,7 +3,7 @@ import AnimatedComponent from "./AnimatedComponent";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <div className="main-footer">
         <div className="main-footer__container container">
           <AnimatedComponent>

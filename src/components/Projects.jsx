@@ -24,7 +24,7 @@ const Projects = ({ limit, isArchivePage = false }) => {
       setLoading(false);
       console.error("Error loading projects:", err);
     }
-  }, []);
+  }, [limit]);
 
   if (loading) return <div>Loading projects...</div>;
   if (error) return <div>Error: {error}</div>;
@@ -52,17 +52,19 @@ const Projects = ({ limit, isArchivePage = false }) => {
             ))}
           </main>
 
-          <div className="button-container">
-            {isArchivePage ? (
-              <Link to="/" className="view-archives-button">
-                Back to Home
-              </Link>
-            ) : (
-              <Link to="/projects" className="view-archives-button">
-                View Project Archives
-              </Link>
-            )}
-          </div>
+          <AnimatedComponent>
+            <div className="button-container">
+              {isArchivePage ? (
+                <Link to="/" className="view-archives-button">
+                  Back to Home
+                </Link>
+              ) : (
+                <Link to="/projects" className="view-archives-button">
+                  View Project Archives
+                </Link>
+              )}
+            </div>
+          </AnimatedComponent>
         </div>
       </section>
     </section>
