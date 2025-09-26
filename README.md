@@ -44,6 +44,22 @@ A modern, responsive portfolio website built with React and Vite.
    npm run preview
    ```
 
+## Deployment
+
+This Vite project can be deployed to any static hosting service. Here are a few popular options:
+
+- **Netlify**: Offers seamless deployment from a Git repository. It automatically detects Vite projects, runs the build command, and deploys the `dist` directory.
+- **Vercel**: Another excellent platform for hosting modern frontend applications with great CI/CD integration.
+- **GitHub Pages**: A free and straightforward way to host directly from your GitHub repository.
+
+### Example Deployment with Netlify
+
+1. Push your code to a GitHub repository.
+2. Sign up for a Netlify account and connect it to your GitHub.
+3. Select "Add new site" > "Import an existing project" and choose your repository.
+4. Netlify will detect the Vite settings. Confirm the **Build command** is `npm run build` and the **Publish directory** is `dist`.
+5. Click "Deploy site".
+
 ## Contact
 
 - **Email**: builtbymarielle@gmail.com
