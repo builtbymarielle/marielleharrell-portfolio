@@ -42,7 +42,7 @@ const HomePage = () => {
         </p>
         <div className="about__btn-holder">
           <a
-            href="https://drive.google.com/file/d/1jxJ3IrAUvs9SI2QBY8C59HAPfL5WIBKR/view?usp=sharing"
+            href="https://drive.google.com/file/d/1SocInNley6lZmbgMC5Ft2ewW66yWXE_q/view?usp=sharing"
             target="_blank"
             className="about__button btn__outline"
           >
