@@ -1,0 +1,27 @@
+// Site Colors
+$site-white: #ffffff;
+$site-white-hover: #f3eee2;
+$site-blue: #86bfee;
+$site-blue-hover: #6ea7d5;
+
+$site-blue-darker: #4184bb;
+$site-orange: #f56634;
+$site-marron: #602017;
+$site-marron-hover: #4d1912;
+$site-darkbrown-transparent: rgb(43, 14, 13, 0.95);
+$site-darkbrown: #2b0e0d;
+$site-grey: #e6e1df;
+$site-textcolor: #797979;
+
+// Container Widths at breakpoints
+$container-xs: calc(100% - 20px);
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-xxl: 1320px;
+
+$container-narrow: 753px;
+
+// gutters / padding
+$container-padding: 20px;

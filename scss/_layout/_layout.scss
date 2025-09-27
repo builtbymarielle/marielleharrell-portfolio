@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: $container-padding 0;
+  box-sizing: border-box;
+
+  // Responsive Max-Widths
+  @media (max-width: 480px) {
+    max-width: $container-xs;
+  }
+  @media (min-width: 500px) {
+    max-width: $container-sm;
+  }
+  @media (min-width: 576px) {
+    max-width: $container-md;
+  }
+  @media (min-width: 992px) {
+    max-width: $container-lg;
+  }
+  @media (min-width: 1200px) {
+    max-width: $container-xl;
+  }
+  @media (min-width: 1400px) {
+    max-width: $container-xxl;
+  }
+}
