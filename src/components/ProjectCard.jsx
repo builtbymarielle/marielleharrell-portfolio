@@ -4,7 +4,7 @@ const ProjectCard = ({ project }) => {
   const languagesHtml = project.languages.map((lang, index) => (
     <span key={index} className="language">
       <img
-        src={`/images/icons/${lang.toLowerCase()}.svg`}
+        src={`./images/icons/${lang.toLowerCase()}.svg`}
         alt={lang}
         className="language-icon"
       />

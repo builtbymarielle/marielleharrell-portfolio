@@ -57,7 +57,7 @@ const Skills = () => {
                 <div className={getSkillItemClass(i)}>
                   <div className="skills__icon-wrapper">
                     <img
-                      src={`/images/icons/${skill.icon}`}
+                      src={`./images/icons/${skill.icon}`}
                       alt={skill.name}
                       className="skills__icon"
                     />

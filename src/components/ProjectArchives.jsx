@@ -18,10 +18,10 @@ const ProjectArchives = () => {
             TAKE A LOOK AT <br /> MY HISTORY
           </>
         }
-        backgroundImage="/images/hero.png"
+        backgroundImage="./images/hero.png"
         showSocials={false}
         showImage={true}
-        backgroundImageCirc="/images/history-me.png"
+        backgroundImageCirc="./images/history-me.png"
       />
       <About title="My Project History">
         <p>

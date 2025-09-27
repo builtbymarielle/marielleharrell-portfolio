@@ -11,10 +11,10 @@ const HomePage = () => {
       <Hero
         title="Hello, I'm Marielle"
         subtitle="SOFTWARE ENGINEER"
-        backgroundImage="/images/hero.png"
+        backgroundImage="./images/hero.png"
         showSocials={true}
         showImage={true}
-        backgroundImageCirc="/images/profile-me.png"
+        backgroundImageCirc="./images/profile-me.png"
       />
       <About title="About Me">
         <p>
