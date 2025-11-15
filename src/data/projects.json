@@ -2,10 +2,10 @@
   {
     "title": "Monkey Memory Game",
     "created": "Coming up...",
-    "languages": ["Django", "Angular", "HTML", "CSS", "JavaScript"],
-    "description": "When visiting the Indianapolis zoo this past summer, I was inspired to recreate a Monkey Memory Game. I would like to take the knowledge I have learned about Django in the past year to setup as the backend and using a modern frontend framework, like React or Angular, as the frontend. There will be a login feature, and will use Chart.js to display the average score for each user. Checkout my progess on GitHub.",
+    "languages": ["Firebase", "React", "TypeScript", "CSS"],
+    "description": "I'm currently working on a fun project inspired by my visit to the Indianapolis Zoo this past summer. For this project, I'm using Vite with React for the frontend and Firebase for the backend and database. The game will have a login feature, and I'm planning to use Chart.js to show each user's average score over time, so players can track their progress. ",
     "live": "",
-    "github": "",
+    "github": "https://github.com/builtbymarielle/monkey-memory",
     "figma": "",
     "in_progress": true,
     "last_updated": "September 2025"
@@ -14,9 +14,9 @@
     "title": "Fictional University",
     "created": "September 2025",
     "languages": ["Wordpress", "PHP", "JavaScript", "CSS"],
-    "description": "Creating a custom Wordpress Template for a fictional university. Taking my first steps in relearning PHP and familiarizing myself with Wordpress. I am following a UDemy Course called 'How to create a custom Wordpress Template' by Someone's Name.",
+    "description": "Creating a custom Wordpress Template for a fictional university. Taking my first steps in relearning PHP and familiarizing myself with Wordpress. I am following a UDemy Course called 'How to create a custom Wordpress Template's.",
     "github": "https://github.com/builtbymarielle/fictional-university",
-    "live": "",
+    "live": "https://marhar265.dreamhosters.com/",
     "figma": "",
     "in_progress": true,
     "last_updated": "September 2025"
@@ -25,18 +25,18 @@
     "title": "Profolio Website 2025",
     "created": "September 2025",
     "languages": ["React", "JavaScript", "SASS", "CSS", "Figma"],
-    "description": "Recreating my portfolio website in 2025. Told some time to brainstorm in Figma of how I would like to set up my portfolio, which you can view below. Relearning how to use Prepors (SCSS compling software) and React. Taking some first steps to get inspired and work on my own personal development again.",
+    "description": "Rebuilding my portfolio website in 2025! I started by brainstorming designs in Figma, mapping out how I want the site to look and feel—you can check out my ideas below. I'm also relearning Prepros for SCSS compilation and diving back into React. It feels great to take these first steps toward personal growth and get inspired to work on my own projects again.",
     "github": "https://github.com/builtbymarielle/portfolio",
     "live": "",
     "figma": "https://www.figma.com/design/TpGRGpv9car5C19Lt9N3fj/Portfolio---Marielle-Harrell?node-id=265-2&t=fsxVVnUIVrU2mCKM-1",
-    "in_progress": true,
+    "in_progress": false,
     "last_updated": "September 2025"
   },
   {
     "title": "SkyAlert - Weather App",
     "created": "August 2023",
     "languages": ["HTML", "CSS", "JavaScript", "SASS", "jquery"],
-    "description": "Weather forecast app using OpenWeatherMap API. Asks for users location to give weather forecast in that location. Users can search for weather in any city. Can change from Celcius to Fahrenheit, see 3 days of upcoming forecast, UV Index, wind speed, humidity and more. Would like to impliment more features in the future.",
+    "description": "I built a weather forecast app using the OpenWeatherMap API. It can detect a user’s location to provide a local forecast, and users can also search for the weather in any city. The app includes features like switching between Celsius and Fahrenheit, viewing a 3-day forecast, and checking the UV Index, wind speed, humidity, and more. I plan to add additional features in the future to make it even more interactive and useful.",
     "github": "https://github.com/builtbymarielle/weatherAPI",
     "live": "https://harremar.github.io/weatherapi/",
     "figma": "",
@@ -63,7 +63,7 @@
     "title": "College GitHub Repos",
     "created": "Aug 2020",
     "languages": [],
-    "description": "Checkout my old College projects on GitHub, if you would like to see what I've learned throughout my college years",
+    "description": "Check out my college projects on GitHub to see what I’ve learned and built throughout my time in school.",
     "github": "https://github.com/harremar",
     "live": ""
   }
