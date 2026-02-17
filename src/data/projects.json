@@ -1,31 +1,42 @@
 [
   {
-    "title": "Monkey Memory Game",
-    "created": "Coming up...",
-    "languages": ["Firebase", "React", "TypeScript", "CSS"],
-    "description": "I'm currently working on a fun project inspired by my visit to the Indianapolis Zoo this past summer. For this project, I'm using Vite with React for the frontend and Firebase for the backend and database. The game will have a login feature, and I'm planning to use Chart.js to show each user's average score over time, so players can track their progress. ",
+    "title": "Weather App 2026",
+    "created": "February 2026",
+    "languages": [ "React", "CSS", "Figma"],
+    "description": "I am building a simple and responsive weather application using React and Vite to strengthen my skills in API integration, state management, local storage, and modern UI development. Beyond displaying basic weather data, the long-term goal is to implement intelligent recommendations based on current weather conditions—such as activity suggestions or clothing guidance—to create a more interactive and user-focused experience.\n\n The project is currently in development, with additional features planned, including saved locations, favorites management, and enhanced UI responsiveness.",
     "live": "",
-    "github": "https://github.com/builtbymarielle/monkey-memory",
+    "github": "https://github.com/builtbymarielle/weather",
+    "figma": "https://www.figma.com/design/rNcjFqGASRQJ9rCeXyigq0/New-Weather-App?node-id=0-1&p=f&t=tYKyNVof4spsBvX1-0",
+    "in_progress": true,
+    "last_updated": "February 2025"
+  },
+  {
+    "title": "Advent of Code: Python Practice",
+    "created": "Febuary 2026",
+    "languages": ["Python"],
+    "description": "Worked through the 2025 Advent of Code challenges, revisiting problems from previous years to strengthen algorithmic thinking and problem-solving skills. Focused on improving Python proficiency, data structure knowledge, and optimization strategies through daily coding exercises. I would like to continue practicing coding challenges like these to improve my problem-solving skills.",
+    "github": "https://github.com/builtbymarielle/adventOfCode",
+    "live": "",
     "figma": "",
     "in_progress": true,
-    "last_updated": "September 2025"
+    "last_updated": "Febuary 2026"
   },
   {
     "title": "Fictional University",
     "created": "September 2025",
     "languages": ["Wordpress", "PHP", "JavaScript", "CSS"],
-    "description": "Creating a custom Wordpress Template for a fictional university. Taking my first steps in relearning PHP and familiarizing myself with Wordpress. I am following a UDemy Course called 'How to create a custom Wordpress Template's.",
+    "description": "I developed a custom WordPress theme for a fictional university as part of strengthening my understanding of WordPress development and PHP. My goal is to better understand the backend structure of WordPress sites and confidently manage content, pages, and navigation for my company's website. \n\n I'm currently following the Udemy course “How to Create a Custom WordPress Theme” to deepen my knowledge of theme architecture, templating, and dynamic content. By learning how WordPress works behind the scenes, I'm ensuring I can efficiently update pages, manage links, and maintain site structure when needed. \n\nThe site will be launching soon.",
     "github": "https://github.com/builtbymarielle/fictional-university",
-    "live": "https://marhar265.dreamhosters.com/",
+    "live": "",
     "figma": "",
-    "in_progress": true,
+    "in_progress": false,
     "last_updated": "September 2025"
   },
   {
     "title": "Profolio Website 2025",
     "created": "September 2025",
     "languages": ["React", "JavaScript", "SASS", "CSS", "Figma"],
-    "description": "Rebuilding my portfolio website in 2025! I started by brainstorming designs in Figma, mapping out how I want the site to look and feel—you can check out my ideas below. I'm also relearning Prepros for SCSS compilation and diving back into React. It feels great to take these first steps toward personal growth and get inspired to work on my own projects again.",
+    "description": "I'm currently rebuilding my portfolio website for 2025 to better reflect my growth as a developer and modernize both the design and user experience. The process began with wireframing and design exploration in Figma, where I mapped out the overall look and feel of the site (design concepts are shared below). I'm also revisiting Prepros for SCSS compilation and deepening my expertise in React as part of this refresh.",
     "github": "https://github.com/builtbymarielle/portfolio",
     "live": "",
     "figma": "https://www.figma.com/design/TpGRGpv9car5C19Lt9N3fj/Portfolio---Marielle-Harrell?node-id=265-2&t=fsxVVnUIVrU2mCKM-1",
@@ -36,7 +47,7 @@
     "title": "SkyAlert - Weather App",
     "created": "August 2023",
     "languages": ["HTML", "CSS", "JavaScript", "SASS", "jquery"],
-    "description": "I built a weather forecast app using the OpenWeatherMap API. It can detect a user’s location to provide a local forecast, and users can also search for the weather in any city. The app includes features like switching between Celsius and Fahrenheit, viewing a 3-day forecast, and checking the UV Index, wind speed, humidity, and more. I plan to add additional features in the future to make it even more interactive and useful.",
+    "description": "Developed a dynamic weather forecast application powered by the OpenWeatherMap API. The app detects a user's geolocation to automatically display a local forecast, while also allowing users to search for weather conditions in any city worldwide.\n\nKey features include temperature unit conversion (Celsius and Fahrenheit), a 3-day forecast view, and detailed weather metrics such as UV Index, wind speed, humidity, and atmospheric conditions. The project demonstrates my experience with API integration, asynchronous data handling, geolocation services, and responsive UI development.\n\nMore API focus and less design. I plan on rebuilding and designing this project.",
     "github": "https://github.com/builtbymarielle/weatherAPI",
     "live": "https://harremar.github.io/weatherapi/",
     "figma": "",
@@ -47,7 +58,7 @@
     "title": "Profolio Website 2023",
     "created": "May 2023",
     "languages": ["HTML", "JavaScript", "SASS", "CSS"],
-    "description": "My old profolio site hosted on gitHub.",
+    "description": "An early snapshot of my work, showing projects and experiments that laid the groundwork for my current skills. Preserved here to demonstrate growth over time.",
     "github": "https://github.com/harremar/marielleharrell",
     "live": "https://harremar.github.io/marielleharrell/"
   },
@@ -55,7 +66,7 @@
     "title": "Child Life Zone",
     "created": "November 2023",
     "languages": ["XD", "Illustrator", "SASS", "CSS", "JavaScript", "HTML"],
-    "description": "Developed a vibrant and user-friendly application tailored for the Child Life Zone at Riley Children's Hospital. Prioritized simplicity, colorfulness, and fun in the design to cater to its young users helping to descover what CLZ has to offer. Utilized Adobe XD, Illustrator, HTML, CSS, SCSS, and JavaScript to create user interface and design.",
+    "description": "Developed a vibrant, kid-friendly application concept for the Child Life Zone at Riley Children's Hospital. The design prioritizes simplicity, bold color, and a fun retro arcade-inspired aesthetic to create an engaging and intuitive experience for young users on iPad devices.\n\nThe goal of the application is to serve as an internal, interactive guide that helps children explore the activities available within the Child Life Zone, including arts and crafts, games, and the in-house radio station. The interface was intentionally designed to feel playful, energetic, and welcoming while remaining easy to navigate for children of varying ages.\n\nThe project was created using Adobe XD and Illustrator for design, and built with HTML, CSS, SCSS, and JavaScript to bring the user interface to life.",
     "github": "https://github.com/harremar/CLZ2023",
     "live": "https://harremar.github.io/CLZ2023/"
   },
@@ -63,7 +74,7 @@
     "title": "College GitHub Repos",
     "created": "Aug 2020",
     "languages": [],
-    "description": "Check out my college projects on GitHub to see what I’ve learned and built throughout my time in school.",
+    "description": "Check out my college projects on GitHub to see what I've learned and built throughout my time in school.",
     "github": "https://github.com/harremar",
     "live": ""
   }

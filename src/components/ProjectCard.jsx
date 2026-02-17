@@ -19,7 +19,11 @@ const ProjectCard = ({ project }) => {
       )}
       <small>{project.created}</small>
       <h3>{project.title}</h3>
-      <p>{project.description}</p>
+      {project.description
+        .split(/\n\n+/)
+        .map((para, idx) => (
+          <p key={idx}>{para}</p>
+        ))}
 
       <div className="card-bottom-holder">
         <div className="languages-container">{languagesHtml}</div>
