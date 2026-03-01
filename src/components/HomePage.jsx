@@ -42,11 +42,11 @@ const HomePage = () => {
         </p>
         <div className="about__btn-holder">
           <a
-            href="https://drive.google.com/file/d/1SocInNley6lZmbgMC5Ft2ewW66yWXE_q/view?usp=sharing"
+            href="/marielleharrell-portfolio/Marielle_Harrell_Resume.pdf"
             target="_blank"
             className="about__button btn__outline"
           >
-            View Resume
+            Download Resume
           </a>
           <a href="#projects" className="about__button btn__solid">
             View Projects
