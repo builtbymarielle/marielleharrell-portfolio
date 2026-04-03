@@ -22,6 +22,17 @@
     "last_updated": "Febuary 2026"
   },
   {
+    "title": "Digimon Web App",
+    "created": "August 2023",
+    "languages": ["HTML", "CSS", "JavaScript", "React", "Azure"],
+    "description": "A Digimon-themed web app built with React, using custom HTML, CSS, and JavaScript. This project focuses on core front-end fundamentals and basic component structure rather than modern frameworks or styling libraries. \n\nDeployed on Microsoft Azure to demonstrate experience with cloud hosting and deployment. Recently revisited and repaired after it broke due to outdated dependencies—troubleshot build and runtime issues, updated packages, and reconfigured the Azure deployment to successfully restore the application. \n\nI plan to expand and enhance the front end to make the app more dynamic and engaging.",
+    "github": "https://github.com/builtbymarielle/digimon-react",
+    "live": "https://delightful-beach-08be4f41e.1.azurestaticapps.net/",
+    "figma": "",
+    "in_progress": false,
+    "last_updated": "August 2023"
+  },
+  {
     "title": "Fictional University",
     "created": "September 2025",
     "languages": ["Wordpress", "PHP", "JavaScript", "CSS"],
